@@ -43,7 +43,7 @@ class Line {
         this.x=Math.random()*this.canvas.width;
         this.y=Math.random()*this.canvas.height;
         this.history = [{x:this.x,y:this.y}];
-        this.lineWidth = Math.floor(Math.random()*5+1);
+        this.lineWidth = Math.floor(Math.random()*7+1);
         this.hue =Math.floor(Math.random()*360+1);
         this.maxLength = Math.floor(Math.random()*150+10);
         this.speedX= Math.floor(Math.random()*1-.5);
@@ -89,7 +89,7 @@ class Line {
 }
 
 const lineArray = [];
-const numberOfLines = 250;
+const numberOfLines = 200;
 for(let i=0;i<numberOfLines;i++){
     lineArray.push(new Line(canvas));
 }
